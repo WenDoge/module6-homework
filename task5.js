@@ -4,7 +4,13 @@
 
 // Протестируйте функцию на любых значениях и выведите результат в консоль.
 
-let x = +prompt('vvedite 1 chislo');
-let n = +prompt('vvedite 2 chislo');
-const result = (a, b) => (a && b > 0) ? console.log(a**b) : console.log('vi vveli ne naturalnoe chislo');
-result(x,n);
+const exp = (a, b) => 
+{
+   let result = a;
+   for (i = 1; i < b; i++)
+   {
+      result = result * a;
+   }
+   return result;
+}
+console.log(exp(7, 3));
